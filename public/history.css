@@ -1,0 +1,26 @@
+#info-history{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.modyA{
+    background: yellow;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 4vh;
+}
+.op{
+    border: none;
+    background: yellow;
+    text-align: start;
+}
+.h-pro{
+    margin: 0px;
+}
+.price-pro{
+    display: flex;
+    justify-content: flex-end;
+}

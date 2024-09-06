@@ -1,0 +1,19 @@
+#log-register{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.form-caj{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+#registrar{
+    height: 50px;
+    width: 75px;
+    background: rgb(231, 227, 1);
+    border: none;
+    border-radius: 20px;
+}

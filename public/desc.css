@@ -1,0 +1,116 @@
+#pay{
+    display: flex;
+    margin-right: 4vw;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#desc{
+    margin-left: 1vw;
+    margin-top:1vh;
+}
+#hh{
+    margin-top:5vh;
+    margin-left: 2vw;
+    font-size: x-large;
+}
+#descripcion{
+    margin-left: 10vw;
+}
+#text-desc{
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+}
+#cantidades{
+    width: 20px;
+    text-align: center;
+}
+#userSell{
+    margin-left: 4vw;
+}
+#box-cant{
+    margin-bottom: 2vh;
+    font-size: x-large;
+}
+#add-cart{
+    width: 200px;
+    background: rgb(148, 145, 0);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 2vh;
+}
+#buy-now{
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background: rgb(0, 119, 0);
+}
+.btn-ml{
+    font-size: x-large;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    border: groove;
+    border-color: slategray;
+    margin-bottom: 2vh;
+}
+#msjs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msj{
+    width: 80vw;
+    padding: 20px;
+    margin-bottom: 2vh;
+}
+#youQuest{
+    margin-bottom: 5vh;
+    display: flex;
+    align-items: center;
+}
+#btn-youQuest{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background: green;
+    color: white;
+    height: 7vh;
+    width: 10vw;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+#btn-fav{
+    font-size: large;
+    padding: 7px;
+    border-radius: 30px;
+    margin-right: 2vw;
+}
+#yourQuest{
+    height: 7vh;
+    width: 50vw;
+    padding: 0;
+    padding-inline: 0;
+    padding-block: 0;
+    border-width: 1px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 1vw;
+}
+#alert-msj{
+    color: red;
+}
+.price-final{
+    font-size: larger;
+    color: rgb(0, 105, 0);
+    font-weight: bold;
+}
+@media (max-width: 769px){
+    #btn-youQuest{
+        width: 20vw;
+    }
+}

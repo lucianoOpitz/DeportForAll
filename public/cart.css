@@ -1,0 +1,129 @@
+h2{
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.caja-producto{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background: yellow;
+    border-radius: 20px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+.btn-ml{
+    margin-right: 2vw;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+#box-cart{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+#pay-cart{
+    font-size: xx-large;
+    border-top-right-radius: 20px;
+    background: green;
+    color: white;
+}
+#fail{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#tot-pay{
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+#box-pay{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2vw;
+}
+.box-price-and-del{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.del{
+    background: red;
+    color: white;
+    border-color: white;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius:20px;
+}
+#del-cart{
+    background: red;
+    color: white;
+    border-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.add{
+    background: #b97d00;
+    color: white;
+    border-color: white;
+    padding: 10px;
+    border-top-right-radius: 20px;
+}
+.box-price-multi{
+    background: rgb(223, 200, 0);
+    color: black;
+    padding: 10px;
+    padding-right: 0;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+}
+.count-cart{
+    background: white;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.solo-moless{
+    background: white;
+}
+.price-final{
+    color: white;
+    padding: 10px;
+    border-bottom-right-radius:20px;
+    background: green;
+}
+.total{
+    font-weight: bold;
+}
+.box-price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.prices{
+    margin-right: 10px;
+}
+.modify-carts{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.btn-link{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,53 @@
+#info-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msjs{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    background: yellow;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 3vh;
+}
+.box-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+h2{
+    margin-top: 0;
+}
+.btn-delete{
+    border-radius: 20px;
+    background: red;
+    color: white;
+    border-color: wheat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box-responder{    
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-responder{
+    background: green;
+    color: white;
+    height: 5vh;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.responder{
+    border-bottom-left-radius: 10px;    
+    width: 50vw;
+    padding-left: 1vw;
+}
+.btn-desc{
+    background: rgba(0,0,0,0);
+    border: none;
+}
+.name-product{
+    margin: 0;
+}

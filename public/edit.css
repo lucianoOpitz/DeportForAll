@@ -1,0 +1,83 @@
+#my-products{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5vw;
+}
+.redirect{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: yellow;
+    width: 80vw;
+    padding: 20px;
+    border-radius: 20px;
+}
+.btn-mod{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(0, 82, 190);
+    color: white;
+}
+.btn-can{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(190, 0, 0);
+    color: white;
+}
+.btn-save{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(0, 190, 0);
+    color: white;
+}
+.caja-btn-mod{
+    display: flex;
+    justify-content: flex-end;
+}
+.inputs{
+    width: 50vw;
+}
+.box-ofers{
+    margin-top: 2vh;
+}
+.ofers{
+    margin-bottom: 2vh;
+}
+.sure{
+    margin-top: 3vh;
+    justify-content: space-between;
+}
+.btn-del{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(170, 0, 0);
+    color: white;
+}
+.del-cancel{
+    background: rgb(170, 102, 0);
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 2vw;
+    color:white;
+    border-color:white;
+    font-size: large;
+}
+.del-fin{
+    background: rgb(170, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    color:white;
+    border-color:white;
+    font-size: large;
+}
+.btn-ac-del{
+    display: flex;
+    margin-top: 2vh;
+}

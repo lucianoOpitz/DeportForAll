@@ -1,0 +1,15 @@
+#sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+#name{
+    margin-bottom: 5vh;
+}
+#error{
+    display: flex;
+    margin-top: 10vh;
+    justify-content: center;
+}

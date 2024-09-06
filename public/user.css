@@ -1,0 +1,59 @@
+#miperfil{
+    display: flex;
+    justify-content: space-around;
+}
+.labout{
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 2vh;
+    background:rgb(224, 202, 0);
+    padding: 20px;
+    border-radius: 20px;
+}
+#view-pass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#ver{
+    border-radius: 10px;
+    background: white;
+}
+.btn-mod{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(0, 82, 190);
+    color: white;
+}
+.btn-can{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(190, 0, 0);
+    color: white;
+}
+.btn-save{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(0, 190, 0);
+    color: white;
+}
+.caja-btn-mod{
+    display: flex;
+    justify-content: flex-end;
+}
+.inputs{
+    border-radius: 5px;
+    border: none;
+}
+@media (max-width: 769px){
+    #miperfil{
+        flex-direction: column;
+        align-items: center;
+    }
+    .labout{
+        width: 80vw;
+    }
+}

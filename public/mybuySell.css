@@ -1,0 +1,72 @@
+#desc-confi{
+    display: flex;
+    justify-content: space-between;
+}
+#name-product{
+    margin-top: 0;
+}
+#confirm-entrega{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#alert-confirm{
+    font-size: x-small;
+    width: 120px;
+}
+#btn-entregado{
+    background: yellow;
+    width: 150px;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-right: 0;
+}
+#chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+#add-msj{
+    display: flex;
+    justify-content: flex-end;
+}
+#send{
+    background: green;
+    color: white;
+    padding: 10px;
+    border-right: 0;
+}
+#new-msj{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-left: 15px;
+}
+#msj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mio{
+    background: rgb(168, 168, 0);
+    width:70vw;
+    margin-bottom: 2vh;
+    padding:10px;
+    padding-left: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: wheat;
+}
+.tuyo{
+    background: rgb(85, 85, 196);
+    width:70vw;
+    margin-bottom: 2vh;
+    padding:10px;
+    padding-left: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color:white;
+}

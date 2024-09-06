@@ -1,0 +1,23 @@
+#title{
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    text-align: inherit;
+}
+#chat{
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background: green;
+    color:white;
+    border-right: none;
+}
+.productos{
+    background: yellow;
+    margin-bottom: 2vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+}

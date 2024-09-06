@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compralo o Vendelo">
+    <title>BuySell</title>
+    <link rel="icon" type="image/png" href="./image/logo.png">
+    <link rel="stylesheet" href="./user.css">
+    <link rel="stylesheet" href="./head&footer.css">
+</head>
+<body>
+    <output id="userios">0</output>
+    <header id="cabeza">
+    </header>
+    <section id="sub-cabeza">
+    </section>
+    <section id="sub-cabeza2"></section>
+    <section id="sub-cabeza3"></section>
+    <h2>Mi Usuario</h2>
+    <section id="miperfil">
+        <section class="form-caj">
+            <article class="labout">
+                <label for="name">Nombre</label>
+                <output type="text" name="name" id="name"></output><br><br>
+            </article>
+            <article class="labout">
+                <label for="secondName">Apellido</label>
+                <output type="text" name="secondName" id="secondName"></output><br><br>
+            </article>
+            <article class="labout">
+                <label for="dni">Dni</label>
+                <output type="text" name="dni" id="dni"></output><br><br>
+            </article>
+            <article class="labout">
+                <label for="mail">Mail</label>
+                <output type="text" name="mail" id="mail"></output><br><br>
+                <input class="inputs" type="text" id="input1" name="input1" placeholder="Nuevo Mail">
+                <output id="alert-input1">*Introduzca su cambio</output>
+                <section class="caja-btn-mod">
+                    <button onclick="modify(1)" class="btn-mod" id="modify1">Modificar</button>
+                    <button onclick="cancel(1)" class="btn-can" id="cancel1">Cancelar</button>
+                    <button onclick="save(1)" class="btn-save"id="save1">Guardar</button>
+                </section>
+            </article>
+            <article class="labout">
+                <label for="telefon">Telefono</label>
+                <output type="text" name="telefon" id="telefon"></output><br><br>
+                <input class="inputs" type="text" id="input3" placeholder="Nuevo Telefono">
+                <output id="alert-input3">*Introduzca su cambio</output>
+                    <section class="caja-btn-mod">
+                    <button onclick="modify(3)" class="btn-mod" id="modify3">Modificar</button>
+                    <button onclick="cancel(3)" class="btn-can" id="cancel3">Cancelar</button>
+                    <button onclick="save(3)" class="btn-save"id="save3">Guardar</button>
+                </section>
+            </article>
+        </section>
+        <section class="form-caj">
+            <article class="labout">
+                <label for="codePostal">localidad</label>
+                <output type="text" name="barrio" id="barrio"></output><br><br>
+                <input class="inputs" type="text" id="input7" placeholder="Nueva Localidad">
+                <output id="alert-input7">*Introduzca su cambio</output>
+                <section class="caja-btn-mod">
+                    <button onclick="modify(7)" class="btn-mod" id="modify7">Modificar</button>
+                    <button onclick="cancel(7)" class="btn-can" id="cancel7">Cancelar</button>
+                    <button onclick="save(7)" class="btn-save"id="save7">Guardar</button>
+                </section>
+            </article>
+            <article class="labout">
+                <label for="codePostal">Código Postal</label>
+                <output type="text" name="codePostal" id="codePostal"></output><br><br>
+                <input class="inputs" type="text" id="input2" placeholder="Nuevo Código Postal">
+                <output id="alert-input2">*Introduzca su cambio</output>
+                <section class="caja-btn-mod">
+                    <button onclick="modify(2)" class="btn-mod" id="modify2">Modificar</button>
+                    <button onclick="cancel(2)" class="btn-can" id="cancel2">Cancelar</button>
+                    <button onclick="save(2)" class="btn-save"id="save2">Guardar</button>
+                </section>
+            </article>
+            <article class="labout">
+                <label for="direccion">Dirección</label>
+                <output type="text" name="direccion" id="direccion"></output><br><br>
+                <input class="inputs" type="text" id="input4" placeholder="Nueva Dirección">
+                <output id="alert-input4">*Introduzca su cambio</output>
+                <section class="caja-btn-mod">
+                    <button onclick="modify(4)" class="btn-mod" id="modify4">Modificar</button>
+                    <button onclick="cancel(4)" class="btn-can" id="cancel4">Cancelar</button>
+                    <button onclick="save(4)" class="btn-save"id="save4">Guardar</button>
+                </section>
+            </article>
+        </section>
+        <section class="form-caj">
+            <article class="labout">
+                <label for="userName">Nombre de Usuario</label>
+                <output type="text" name="userName" id="userName"></output><br><br>
+                <input class="inputs" type="text" id="input5" placeholder="Nuevo Nombre de Usuario">
+                <output id="alert-input5">*Introduzca su cambio</output>
+                <section class="caja-btn-mod">
+                    <button onclick="modify(5)" class="btn-mod" id="modify5">Modificar</button>
+                    <button onclick="cancel(5)" class="btn-can" id="cancel5">Cancelar</button>
+                    <button onclick="save(5)" class="btn-save"id="save5">Guardar</button>
+                </section>
+            </article>
+            <article class="labout">
+                <label for="userPass">Contraseña</label>
+                <section id="view-pass">
+                    <output type="text" name="userPass" id="userPass"></output>
+                    <button id="ver" onclick="view()">Ver</button><br><br>
+                </section>
+                <input class="inputs" type="text" id="input6" placeholder="Nueva Contraseña">
+                <output id="alert-input6">*Introduzca su cambio</output>
+                <section class="caja-btn-mod">
+                    <button onclick="modify(6)" class="btn-mod" id="modify6">Modificar</button>
+                    <button onclick="cancel(6)" class="btn-can" id="cancel6">Cancelar</button>
+                    <button onclick="save(6)" class="btn-save"id="save6">Guardar</button>
+                </section>
+            </article>
+        </section>
+    </section>
+    <footer id="foter">
+    </footer>
+    <script src="./head&footer.js"></script>
+    <script src="./user.js"></script>
+</body>
+</html>

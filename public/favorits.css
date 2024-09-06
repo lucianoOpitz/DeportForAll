@@ -1,0 +1,36 @@
+#show-favorits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+.box-fav{
+    display: flex;
+    flex-direction: column;
+    background: yellow;
+    margin-top: 2vh;
+    width: 50vw;
+    padding: 20px;
+    border-radius: 20px;
+}
+.datos{
+    display: flex;
+    justify-content: flex-end;
+}
+.price{
+    display: flex;
+    align-items: flex-end;
+}
+.box-button-fav{
+    display: flex;
+    justify-content: space-between;
+}
+.favi{
+    background: red;
+    border-radius: 20px;
+    padding: 5px;
+}
+.btn-tit{
+    background: yellow;
+    border: none;
+}
