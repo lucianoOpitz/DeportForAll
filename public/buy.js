@@ -115,7 +115,7 @@ class Dom{
                 <output id="nameUsu">Vendedor: ${usuarioVendedor[0]}</output><br>
                 <output id="barrio">Localidad: ${usuarioVendedor[1]}</output><br>
             </section>
-            <div id="paymentBrick_container"></div>
+            <div id="cardPaymentBrick_container"></div>
         `
         let cantidades= document.getElementById("cantidad")
         cantidades.value=1
@@ -212,7 +212,7 @@ class Dom{
     }
     createCheckoutButton(preferenceId){
         const bricksBuilder = mp.bricks();
-        const renderPaymentBrick = async (bricksBuilder) => {
+        const renderCardPaymentBrick = async (bricksBuilder) => {
             if(window.paymentBrickController){
                 window.paymentBrickController.unmount()
             }
@@ -224,8 +224,6 @@ class Dom{
                 amount: parseInt(precios),
                 preferenceId: preferenceId,
                 payer: {
-                  firstName: "",
-                  lastName: "",
                   email: "",
                 },
             },
@@ -236,9 +234,6 @@ class Dom{
                     },
                 },
                 paymentMethods: {
-                    creditCard: "all",
-                    debitCard: "all",
-                    onboarding_credits: "all",
                     maxInstallments: 12
                 },
             },
@@ -249,7 +244,7 @@ class Dom{
                  Aquí puede ocultar cargamentos de su sitio, por ejemplo.
                 */
               },
-              onSubmit: ({formData}) => {
+              onSubmit: (cardformData) => {
                 // callback llamado al hacer clic en el botón de envío de datos
                 return new Promise((resolve, reject) => {
                   fetch("/proccess_payment", {
@@ -257,9 +252,8 @@ class Dom{
                     headers: {
                       "Content-Type": "application/json",
                     },
-                    body: JSON.stringify(formData),
+                    body: JSON.stringify(cardformData),
                   })
-                    .then((response) => response.json())
                     .then((response) => {
                         console.log(response.status)
                         if(response.status=='approved'){
@@ -301,7 +295,7 @@ class Dom{
                                 this.crearCompra()
                             }
                         }else{  
-                        fail=document.getElementById("fail")
+                            let fail=document.getElementById("fail")
                             fail.style.display="flex"
                             infoProduct.style.display="none"
                         }
@@ -319,13 +313,9 @@ class Dom{
               },
             },
             };
-            window.paymentBrickController = await bricksBuilder.create(
-                "payment",
-                "paymentBrick_container",
-                settings
-            );
-        }; 
-        renderPaymentBrick(bricksBuilder); 
+            window.cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+          };
+          renderCardPaymentBrick(bricksBuilder);
     }
     crearCompra(){
         let userios= document.getElementById("userios")

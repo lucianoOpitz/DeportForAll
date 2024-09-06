@@ -65,7 +65,7 @@ function createCheckoutButton(preferenceId){
         precioFinal=precioFinal+precios[index]
     }
     const bricksBuilder = mp.bricks();
-    const renderPaymentBrick = async (bricksBuilder) => {
+    const renderCardPaymentBrick = async (bricksBuilder) => {
         if(window.paymentBrickController){
             window.paymentBrickController.unmount()
         }
@@ -77,8 +77,6 @@ function createCheckoutButton(preferenceId){
             amount: precioFinal,
             preferenceId: preferenceId,
             payer: {
-              firstName: "",
-              lastName: "",
               email: "",
             },
         },
@@ -89,9 +87,6 @@ function createCheckoutButton(preferenceId){
                 },
             },
             paymentMethods: {
-                creditCard: "all",
-                debitCard: "all",
-                onboarding_credits: "all",
                 maxInstallments: 12
             },
         },
@@ -102,7 +97,7 @@ function createCheckoutButton(preferenceId){
              Aquí puede ocultar cargamentos de su sitio, por ejemplo.
             */
           },
-          onSubmit: ({ selectedPaymentMethod, formData }) => {
+          onSubmit: (cardformData) => {
             // callback llamado al hacer clic en el botón de envío de datos
             return new Promise((resolve, reject) => {
               fetch("/proccess_payment", {
@@ -110,10 +105,8 @@ function createCheckoutButton(preferenceId){
                 headers: {
                   "Content-Type": "application/json",
                 },
-                body: JSON.stringify(formData),
-              })
-                .then((response) => response.json())
-                .then((response) => {
+                body: JSON.stringify(cardformData),
+              }).then((response) => {
                     if(response.status=='approved'){
                         for (let i = 0; i < products.length; i++) {
                             console.log(products)
@@ -170,13 +163,14 @@ function createCheckoutButton(preferenceId){
                         boxCart.style.display="none"
                         boxPay.style.display="none"
                         pay.style.display="none"
-                        fail=document.getElementById("fail")
+                        let fail=document.getElementById("fail")
                         fail.style.display="flex"
                         domProductos.style.display="none"
                     }
                 })
                 .catch((error) => {
                   // manejar la respuesta de error al intentar crear el pago
+                  console.log(error)
                   reject();
                 });
             });
@@ -186,14 +180,10 @@ function createCheckoutButton(preferenceId){
             console.error(error);
           },
         },
-        };
-        window.paymentBrickController = await bricksBuilder.create(
-            "payment",
-            "paymentBrick_container",
-            settings
-        );
-    }; 
-    renderPaymentBrick(bricksBuilder); 
+    };
+    window.cardPaymentBrickController = await bricksBuilder.create('cardPayment', 'cardPaymentBrick_container', settings);
+    };
+    renderCardPaymentBrick(bricksBuilder);
 }
 function crearCompra(num){
     let userios= document.getElementById("userios")
