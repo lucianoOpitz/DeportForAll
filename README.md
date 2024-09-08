@@ -2,17 +2,17 @@
 
 In main: "Code" 🟢 
 >Dowload zip
->Extract
->Open Visual Studio Code
->File>OpenFolder>folder_where_zip_unzipped
->Terminal>NewTerminal
->In Terminal write:
-  npm init -y
-  npm i express morgan mysql cors mercadopago
-  mkcert localhost
->Outside of Vs Code, execute XAMPP start APACHE, start MYSQL, admin MYSQL
->In Vs Code, in terminal:
-  node index.js
+>/Extract
+>/Open Visual Studio Code
+>/File>OpenFolder>folder_where_zip_unzipped
+>/Terminal>NewTerminal
+>/In Terminal write:
+  /npm init -y
+  /npm i express morgan mysql cors mercadopago
+  /mkcert localhost
+>/Outside of Vs Code, execute XAMPP start APACHE, start MYSQL, admin MYSQL
+>/In Vs Code, in terminal:
+  /node index.js
 
 
 ATENTION
