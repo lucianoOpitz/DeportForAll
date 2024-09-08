@@ -1,6 +1,6 @@
 # DeportsForAll
 
-In main: "<Code>" 🟢 
+In main: "Code" 🟢 
 >Dowload zip
 >Extract
 >Open Visual Studio Code
